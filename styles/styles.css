@@ -1,6 +1,6 @@
 
 body {
-    background-color: #f0940a94;
+    background-color: #ff990094;
     font-family: Arial, sans-serif;
 }
 .container {
@@ -23,8 +23,8 @@ button {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    background-color: #ff0000;
-    border: 2px solid #000000;
+    background-color: #690000;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: #A00000;
+    background-color: #ff0000a5;
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
@@ -51,6 +51,7 @@ button:active {
 
 .buttons-container {
     min-height: auto;
+    text-align: center;
     padding: 20px;
 }
 
@@ -60,4 +61,22 @@ button:active {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Brush Script MT', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Time New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 0;
 }

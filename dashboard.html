@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('styles/styles.css');
+    </style>
+    <title>Dante's Inferno Project</title>
+</head>
+<body>
+    <h1>John Wang</h1>
+    <h1>Class: H English 2</h1>
+    <h1>Date: 1/23/2026</h1>
+
+    <div class = "container image-container">
+        <img id="image" alt = "dessert" class="image">
+    </div>
+
+    <script>
+        fetch('images.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById('image').src = data.images[0].imagePath;
+                document.getElementById('image').alt = data.images[0].alt;
+            })
+            .catch(error => {
+                console.error('Error loading JSON:', error);
+            });
+    </script>
+
+    <div class = "container buttons-container">
+        <button id="limbo">Limbo</button>
+        <script>
+            document.getElementById('limbo').addEventListener('click', () => {
+                window.location.href = 'layers/limbo.html';
+            });
+        </script>
+        <button id="upper">Upper</button>
+        <script>
+            document.getElementById('upper').addEventListener('click', () => {
+                window.location.href = 'layers/upper.html';
+            });
+        </script>
+        <button id="violence">Violence</button>
+        <script>
+            document.getElementById('violence').addEventListener('click', () => {
+                window.location.href = 'layers/violence.html';
+            });
+        </script>
+        <button id="fraud">Fraud</button>
+        <script>
+            document.getElementById('fraud').addEventListener('click', () => {
+                window.location.href = 'layers/fraud.html';
+            });
+        </script>
+        <button id="treachery">Treachery</button>
+        <script>
+            document.getElementById('treachery').addEventListener('click', () => {
+                window.location.href = 'layers/treachery.html';
+            });
+        </script>
+    </div>
+</body>
+</html>

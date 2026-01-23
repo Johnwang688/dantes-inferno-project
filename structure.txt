@@ -1,0 +1,8 @@
+#structure.txt
+
+dashboard:
+    Limbo
+    Upper
+    Violence
+    Fraud
+    Treachery

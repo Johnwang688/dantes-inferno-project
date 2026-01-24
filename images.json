@@ -1,8 +1,37 @@
 {
     "images": [
         {
-            "imagePath": "dessert.jpg",
-            "alt": "Dessert"
+            "imagePath": "images/dessert_complete.png",
+            "alt": "Dessert Complete"
+        },
+        {
+            "imagePath": "images/dashboard_background.jpg",
+            "alt": "Dashboard Background"
+        },
+        {
+            "imagePath": "images/limbo_whipped_cream.png",
+            "alt": "Limbo"
+        },
+        {
+            "imagePath": "images/gluttony_bread_pudding.png",
+            "alt": "Gluttony"
+        },
+        {
+            "imagePath": "images/greed_brownie.png",
+            "alt": "Greed"
+        },
+        {
+            "imagePath": "images/violence_chocolate_ganache.png",
+            "alt": "Violence"
+        },
+        {
+            "imagePath": "images/fraud_vanilla_custard.png",
+            "alt": "Fraud"
+        },
+        {
+            "imagePath": "images/treachery_ice_cream.png",
+            "alt": "Treachery"
         }
+        
     ]
 }

@@ -3,68 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('styles/styles.css');
-    </style>
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Dante's Inferno Project</title>
 </head>
 <body>
-    <h1>A Taste of Judgement: Dante's Inferno as Dessert</h1>
-    <h2>Name: John Wang Class: Honors English 2 Date: 1/23/2026</h2>
-    <div class = "container image-container">
-        <img id="image" alt = "dessert" class="image">
+    <div class="text-container">
+        <h1>A Taste of Judgement: Dante's Inferno as Dessert</h1>
+        <h2>Name: **** **** | Class: Honors English II | Date: 1/23/2026</h2>
+    </div>
+
+    <div class="parent-container-dessert">
+        <div class="dessert-img-container">
+            <img id="image" alt="Dessert Complete" class="image">
+        </div>
+        <div class="buttons-container-dessert">
+            <div class="layer-item">
+                <button id="limbo">Limbo</button>
+                <span class="layer-ingredient">Plain whipped cream</span>
+            </div>
+            <div class="layer-item">
+                <button id="gluttony">Gluttony</button>
+                <span class="layer-ingredient">Soggy bread pudding</span>
+            </div>
+            <div class="layer-item">
+                <button id="greed">Greed</button>
+                <span class="layer-ingredient">Dense nut-filled brownie</span>
+            </div>
+            <div class="layer-item">
+                <button id="violence">Violence</button>
+                <span class="layer-ingredient">Spicy chili chocolate ganache</span>
+            </div>
+            <div class="layer-item">
+                <button id="fraud">Fraud</button>
+                <span class="layer-ingredient">Vanilla custard with hidden bitter chocolate</span>
+            </div>
+            <div class="layer-item">
+                <button id="treachery">Treachery</button>
+                <span class="layer-ingredient">Hard-frozen vanilla ice cream</span>
+            </div>
+        </div>
     </div>
 
     <script>
+        // Load image from JSON
         fetch('images.json')
             .then(response => response.json())
             .then(data => {
-                console.log(data);
                 document.getElementById('image').src = data.images[0].imagePath;
                 document.getElementById('image').alt = data.images[0].alt;
             })
-            .catch(error => {
-                console.error('Error loading JSON:', error);
-            });
-    </script>
+            .catch(error => console.error('Error loading JSON:', error));
 
-    <div class = "container buttons-container">
-        <button id="limbo">Limbo</button>
-        <script>
-            document.getElementById('limbo').addEventListener('click', () => {
-                window.location.href = 'layers/limbo.html';
-            });
-        </script>
-        <button id="gluttony">Gluttony</button>
-        <script>
-            document.getElementById('gluttony').addEventListener('click', () => {
-                window.location.href = 'layers/gluttony.html';
-            });
-        </script>
-        <button id="greed">Greed</button>
-        <script>
-            document.getElementById('greed').addEventListener('click', () => {
-                window.location.href = 'layers/greed.html';
-            });
-        </script>
-        <button id="violence">Violence</button>
-        <script>
-            document.getElementById('violence').addEventListener('click', () => {
-                window.location.href = 'layers/violence.html';
-            });
-        </script>
-        <button id="fraud">Fraud</button>
-        <script>
-            document.getElementById('fraud').addEventListener('click', () => {
-                window.location.href = 'layers/fraud.html';
-            });
-        </script>
-        <button id="treachery">Treachery</button>
-        <script>
-            document.getElementById('treachery').addEventListener('click', () => {
-                window.location.href = 'layers/treachery.html';
-            });
-        </script>
-    </div>
+        // Button navigation
+        document.getElementById('limbo').addEventListener('click', () => window.location.href = 'layers/limbo.html');
+        document.getElementById('gluttony').addEventListener('click', () => window.location.href = 'layers/gluttony.html');
+        document.getElementById('greed').addEventListener('click', () => window.location.href = 'layers/greed.html');
+        document.getElementById('violence').addEventListener('click', () => window.location.href = 'layers/violence.html');
+        document.getElementById('fraud').addEventListener('click', () => window.location.href = 'layers/fraud.html');
+        document.getElementById('treachery').addEventListener('click', () => window.location.href = 'layers/treachery.html');
+    </script>
 </body>
 </html>

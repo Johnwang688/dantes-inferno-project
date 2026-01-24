@@ -1,25 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fraud</title>
-        <style>
-            @import url('../styles/styles.css');
-        </style>
-    </head>
-    <body>
-        <h1>Fraud</h1>
-        <div class = "container">
-            <img id="image" alt = "fraud">
-            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Layer 5: Fraud</title>
+</head>
+<body>
+    <div class="text-container">
+        <h1>Layer 5: Fraud</h1>
+    </div>
+
+    <div class="layer-content">
+        <div class="layer-image-container">
+            <img id="image" alt="Fraud" class="image">
         </div>
-        <div class = "buttons-container">
-            <button id="back">Back</button>
-            <script>
-                document.getElementById('back').addEventListener('click', () => {
-                    window.location.href = '../dashboard.html';
-                });
-            </script>
+        <div class="layer-description">
+            <div class="description-box">
+                <h3>Ingredient: Vanilla Custard with Hidden Bitter Dark Chocolate Chunks</h3>
+                <p><strong>Significance:</strong>
+                    Fraudulent sinners deceived others by misusing their gift of intelligence.
+                    Their punishments in Malebolge reflect the deceitfulness of their actions.
+                    The smooth, sweet vanilla custard 
+                    appears delicious on the surface but conceals 
+                    bitter, unexpected dark chocolate bits. This hidden bitterness 
+                    symbolizes betrayal of trust and false appearances. When one bites 
+                    into the custard expecting sweetness, they are instead met with bitterness,
+                    mirroring the false appearance of the fraudsters. The color and texture
+                    of the dark chocolate reflects the imagery of excrement 
+                    and filth that the fraudsters are forced to endure. 
+                    The chocolate chunks represent the deceitful actions of the fraudsters,
+                    as they are forced to eat the excrement and filth that they have caused others to endure.
+                    This ingredient highlights the deceptive nature of fraud,
+                    as it is a sin that corrupts the mind and heart of the sinner.               
+                </p>
+                <p class="quote">"The souls of the flatterers immersed in excrement that seemed to have come from human privies."<br>— Canto XVIII, lines 113–116</p>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <div class="back-button-container">
+        <button id="back">Back to Dashboard</button>
+    </div>
+
+    <script>
+        // Load image from JSON
+        fetch('../images.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('image').src = '../' + data.images[6].imagePath;
+                document.getElementById('image').alt = data.images[6].alt;
+            })
+            .catch(error => console.error('Error loading image:', error));
+
+        document.getElementById('back').addEventListener('click', () => window.location.href = '../dashboard.html');
+    </script>
+</body>
 </html>

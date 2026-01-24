@@ -133,6 +133,24 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(190, 65, 0, 0.7);
+    border-radius: 10px;
+    margin: 80px 200px 0 200px;  /* 80px top margin for empty space */
+}
+
+.intro-description {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: rgba(230, 230, 230, 0.95);
+    text-align: left;
+    padding: 20px;
+}
+
 /* Button styles */
 button {
     padding: 15px 30px;

@@ -196,3 +196,90 @@ h2 {
     color: rgba(45, 0, 0, 1.0);
     margin: 20px 0;
 }
+
+.structural-analysis h3 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(45, 0, 0, 1.0);
+    margin: 20px 0;
+}
+
+.structural-analysis p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(230, 230, 230, 0.95);
+    margin: 20px 0;
+}
+
+.structural-analysis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(190, 65, 0, 0.7);
+    border-radius: 10px;
+    margin: 80px 200px 0 200px;
+}
+
+.purpose-and-theme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(190, 65, 0, 0.7);
+    border-radius: 10px;
+    margin: 80px 200px 0 200px;
+}
+
+.purpose-and-theme h3 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(45, 0, 0, 1.0);
+    margin: 20px 0;
+}
+
+.purpose-and-theme p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(230, 230, 230, 0.95);
+    margin: 20px 0;
+}
+
+.conclusion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(190, 65, 0, 0.7);
+    border-radius: 10px;
+    margin: 80px 200px 0 200px;
+}
+
+.conclusion h3 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(45, 0, 0, 1.0);
+    margin: 20px 0;
+}
+
+.conclusion p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(230, 230, 230, 0.95);
+    margin: 20px 0;
+}

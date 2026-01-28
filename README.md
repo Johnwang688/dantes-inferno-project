@@ -43,12 +43,6 @@ Dante's Inferno/
     └── styles.css          # Project styling
 ```
 
-## How to View
-
-1. Open `dashboard.html` in any modern web browser
-2. Click on any layer button to explore that circle of Hell in detail
-3. Each layer page includes the ingredient, its symbolism, and relevant quotes from *Inferno*
-
 ## Technologies Used
 
 - HTML5

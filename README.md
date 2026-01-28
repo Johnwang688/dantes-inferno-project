@@ -21,7 +21,7 @@ This project explores Dante's depiction of Hell as a descending structure of wor
 
 ```
 Dante's Inferno/
-├── dashboard.html          # Main landing page
+├── index.html          # Main landing page
 ├── images.json             # Image configuration
 ├── images/                 # Project images
 │   ├── dashboard_background.png

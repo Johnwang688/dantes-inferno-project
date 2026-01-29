@@ -299,3 +299,9 @@ h2 {
     color: rgba(200, 200, 200, 0.95);
     margin: 20px 0;
 }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}

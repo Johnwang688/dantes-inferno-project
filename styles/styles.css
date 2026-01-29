@@ -283,3 +283,19 @@ h2 {
     color: rgba(230, 230, 230, 0.95);
     margin: 20px 0;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(200, 200, 200, 0.95);
+    margin: 20px 0;
+}
